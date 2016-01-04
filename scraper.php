@@ -5,13 +5,10 @@ $max_records = 10; // only used for testing
 
 if ($run_environment == 'dev') {
     error_reporting(E_ALL);
-    ini_set('display_errors','On');    
+    ini_set('display_errors','On');   
+    new scraperwiki('');
 }
-
-if ($run_environment == 'dev') {
-    require 'scraperwiki.php';
-}
-
+require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 
 
